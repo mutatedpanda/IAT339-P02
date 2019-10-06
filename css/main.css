@@ -1,0 +1,453 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+header{
+  background-color: #262C68;
+  color: #FBFBFF;
+  padding-bottom: 2rem;
+  font-family: Futura-Bold;
+  width: 100%;
+  position: absolute;
+}
+
+.logo{
+  width:100px;
+  height: auto;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  font-size: 30px;
+  font-family: Futura-Bold;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.body{
+  padding: 10rem 7rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 50px;
+  font-family: BebasNeue;
+}
+
+h3 {
+  font-size: 35px;
+  font-family: Futura-Bold;
+}
+
+h4{
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h5{
+  font-size: 20px;
+  font-family: Futura-Bold;
+  color: #d5d5d5;;
+}
+
+p, li{
+  margin-top: 0;
+  font-size: 18px;
+}
+
+nav{
+  padding-right: 2.5rem;
+  padding-left:  .7rem;
+  text-align: right;
+
+  /* https://stackoverflow.com/questions/29504632/how-to-align-an-image-side-by-side-with-a-heading-element */
+  display: inline;
+  font-size: 16px;
+}
+
+.navlink{
+  color: #d5d5d5;
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+
+.navlink:hover, .navlink:focus {
+  color: #FBFBFF;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+.intext{
+  color: #657ED4;
+}
+
+.intext:hover, .intext:focus{
+  background-color: #FFFDD6;
+  color: #00007A;
+}
+
+label{
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.13rem;
+}
+
+.bgimg{
+  width: 100%;
+  height: auto;
+}
+
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+.container{
+  text-align: center;
+}
+
+.container .imglink{
+  transition-property: filter; 
+  transition-duration: 1s;
+  width: 80%;
+}
+
+/* https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter&preval=blur(5px) */
+.container:hover .imglink, .container:focus .imglink{
+  filter: blur(5px) brightness(70%);
+}
+
+.container .textimg{
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -300%);
+  opacity: 0;
+  transition-property: opacity; 
+  transition-duration: 1s;
+  color: #FBFBFF;
+}
+
+.container:hover .textimg, .container:focus .textimg{
+  opacity: 100;
+}
+
+h2, h3, p{
+  color: #242038;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.start{
+  margin-top: 6rem;
+}
+
+button{
+  display: inline-block;
+  padding: .7rem 2rem;
+  background-color: #657ED4;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px grey;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+button h5{
+  padding: 0;
+  margin: 0;
+  transition-property: background-color, color; 
+  transition-duration: 0.5s;
+}
+
+button:hover, button:focus{
+  background-color: #262C68;
+}
+
+button:hover h5, button:focus h5{
+  color: #FBFBFF;
+}
+
+input{
+  border-radius: 3px;
+}
+
+input:hover, input:focus{
+  background-color: #FFFDD6;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+ul{
+  list-style: none;
+  padding-left:0;
+  padding-bottom: 1rem;
+}
+
+.item{
+  padding-top: .7rem;
+  padding-bottom: .5rem;
+  border-bottom-width: 0.05rem;
+  border-bottom-style: dashed;
+  border-bottom-color: rgb(100);
+}
+
+.product{
+  padding-left: 2rem;
+}
+
+.box{
+  background-color: #FBFBFB;
+  border: 5px solid #BEBBBB;
+  border-radius: 3px;
+  padding-top: 50px;
+  padding-bottom: 5rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 5rem;
+  box-shadow: 10px 10px 20px grey;
+}
+
+h4.box_title{
+  margin-top: 0; 
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(200);
+}
+
+.box_button{
+  float: right;
+}
+
+.text_box{
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.product_list{
+  width: 100%;
+}
+
+.product_item{
+  width: 90%;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(100);
+  border-radius: 40px;
+}
+
+.total{
+  font-weight: bold;
+  }
+
+.total .price{
+  text-indent: 30rem;
+}
+
+table{
+  table-layout: fixed;
+}
+
+tr{
+  display: inline-block;
+}
+
+.box td{
+  width: 33%;
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.product_list td{
+  width: 25%;
+  text-align: right;
+}
+
+.price{
+  text-align: right;
+}
+
+.list_img{
+  width: 100%;
+  height: auto;
+  margin-left: -3rem;
+}
+
+.check_img{
+  width: 100%;
+  height: auto;
+}
+
+.box p{
+  padding-bottom: 1rem;
+}
+
+
+/*
+  BRAND COMPONENTS  -------------------------
+*/
+
+.font1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+recieved from https://www.dafontfree.net/freefonts-futura-f30.htm
+*/
+@font-face {
+font-family: Futura-Bold;
+src: url('fonts/unicode.futurab-webfont.woff2') format('woff2'),
+     url('fonts/unicode.futurab-webfont.woff') format('woff');
+font-style: normal;
+}
+
+/*  https://www.dafont.com/bebas-neue.font  */
+@font-face {
+font-family: BebasNeue;
+src: url('fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+     url('fonts/bebasneue-regular-webfont.woff') format('woff');
+font-style: normal;
+}
+
+.font1{
+  font-family: BebasNeue;
+}
+
+.font2{
+  font-family: Futura-Bold;
+}
+
+.font1, .font2, .font3{
+  font-size: 25px;
+}
+
+.img_font{
+  width: 30%;
+  height: auto;
+}
+
+tr, th{
+  padding: 70px 70px 70px 70px;
+}
+
+th{
+  border: 3px solid #000000;
+}
+
+.color1{
+  background-color: #242038;
+}
+
+.color2{
+  background-color: #262C68;
+}
+
+.color3{
+  background-color: #657ED4;
+}
+
+.color4{
+  background-color: #BEBBBB;
+}
+
+.color5{
+  background-color: #FFFDD6;
+} 
+
+.color6{
+  background-color: #FBFBFF;
+}
+
+
+footer{
+  background-color: #BEBBBB;
+  padding-top: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+
+}
+
+footer h2{
+  color: #FBFBFF;
+  padding-left:  2.5rem;
+}
+
+li{
+  padding-bottom: 1rem;
+}
+
+nav label, nav #hamburger{
+  display: none;
+  font-size: 40px;
+}
+
+@media (max-width: 54rem){
+  header{
+    text-align: center;
+  }
+
+  nav label{
+    display: inline;
+    float: left;
+    margin-top: 2.5rem;
+    margin-left:  2rem;
+  }
+
+
+  .logo{
+    margin-left: 0;
+  }
+
+  nav a{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+    float: left;
+    text-align: left;
+  }
+
+  nav #hamburger{
+    display: inline;
+  }
+
+  nav #hamburger:checked ~ .menu{
+    display: block;
+  }
+}
+
+
+
+

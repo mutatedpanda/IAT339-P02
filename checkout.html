@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <!-- referenced assignment from IAT 235 -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+    <title>P01 Style Guide - Templates</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="index.html"><img src="img/logo.png" class="logo" alt="LOGO"></a>
+      <nav class="navigation">        
+        <a href="index.html" class="navlink">Style Guide Main</a>
+        <a href="product_list.html" class="navlink">Checkout Template</a>
+        <a href="" class="navlink">about</a>
+        <a href="" class="navlink">contact</a>
+      </nav>
+    </header>
+
+
+    <div class="body">
+      <section class="start">
+        <h2>Checkout Web-Page Template</h2>
+
+        <section class="element">
+
+          <div class="box">
+            <h4 class="box_title">CHECKOUT</h4>
+            <table>
+          <tr class="item">
+            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
+            <td><img src="img/p1.jpg" class="check_img"></td>
+            <td class="product">Product 1</td>
+            <td class = "price">$0.00</td>
+          </tr>
+          <!-- https://i5.walmartimages.com/asr/1115958d-37af-4ae7-bed0-9c19cd4b27c5_1.1bf6427daa2484bc6363460da8e1468e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff -->
+          <tr class="item">
+            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
+            <td><img src="img/p1.jpg" class="check_img"></td>
+            <td class="product">Product 2</td>
+            <td class = "price">$0.00</td>
+          </tr>
+          <tr class="item">
+            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
+            <td><img src="img/p1.jpg" class="check_img"></td>
+            <td class="product">Product 3</td>
+            <td class = "price">$0.00</td>
+          </tr>
+          <tr class="total">
+            <td>TOTAL</td>
+            <td></td>
+            <td class="price">$0.00</td>
+          </tr>
+        </table>
+            <button type="submit" class="box_button"><h5>CHECK OUT</h5></button>   
+        </div> 
+
+
+
+
+
+        <div class="box">
+          <h4 class="box_title">PAYMENT</h4>
+          <p>
+            <label for = "payment_method">How would you like to pay?</label>
+            <input type = "radio" id ="payment_method" name="payment_method">Credit Card</input>
+            <input type = "radio" id ="payment_method" name="payment_method">Debit Card</input>
+            <input type = "radio" id ="payment_method" name="payment_method">Cash</input>
+            <input type = "radio" id ="payment_method" name="payment_method">PayPal</input>
+          </p>
+          <p>
+            <label for="card_name">Name on Card</label>
+            <input class="text_box" type="text" id="card_name" placeholder="Jane Sarah Doe">
+          </p>
+          <p>
+            <label for="card_number">Credit Card Number</label>
+            <input class="text_box" type="text" id="card_number" placeholder="0000-0000-0000-0000">
+          </p>
+          <p>
+            <label for="card_cvv">CVV</label>
+            <input class="text_box" type="text" id="card_cvv" placeholder="123">
+          </p>
+          <p>
+            <label for="card_exp">Exp Date</label>
+            <input class="text_box" type="text" id="card_exp" placeholder="mmyy">
+          </p>
+          <button type="submit" class="box_button"><h5>SUBMIT</h5></button>
+        </div>
+        </section>
+      </section>
+    </div>
+  </body>
+
+   <footer>
+
+    <h2>Footer</h2>
+    
+    <div class="footer">
+      
+    </div>
+  </footer> 
+</html>
