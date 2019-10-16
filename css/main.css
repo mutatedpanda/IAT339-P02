@@ -187,10 +187,13 @@ input{
   border-radius: 3px;
 }
 
-input:hover, input:focus{
-  background-color: #FFFDD6;
+input[type="radio"]{
+  margin-left: 3rem;
 }
 
+.first_payment[type="radio"]{
+  margin-left:  0;
+}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -210,11 +213,12 @@ ul{
 }
 
 .item{
-  padding-top: .7rem;
+  padding-top: .5rem;
   padding-bottom: .5rem;
   border-bottom-width: 0.05rem;
   border-bottom-style: dashed;
   border-bottom-color: rgb(100);
+  width: 100%;
 }
 
 .product{
@@ -229,8 +233,21 @@ ul{
   padding-bottom: 5rem;
   padding-left: 50px;
   padding-right: 50px;
+  box-shadow: 10px 10px 20px grey;
+}
+
+.payment_box{
+  background-color: #FBFBFB;
+  border: 5px solid #BEBBBB;
+  border-radius: 3px;
+  padding-top: 50px;
+  padding-bottom: 5rem;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-top: 5rem;
   box-shadow: 10px 10px 20px grey;
+  width: 50%;
+  margin: auto;
 }
 
 h4.box_title{
@@ -250,8 +267,13 @@ h4.box_title{
   width: 100%;
   padding: 5px 5px 5px 5px;
   background-color: white;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+}
+
+.cvv_text_box, .exp_text_box{
+  width: 45%;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  display: inline-block;
 }
 
 .product_list{
@@ -259,38 +281,47 @@ h4.box_title{
 }
 
 .product_item{
+  display: inline-block;
   width: 90%;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
   border-bottom-color: rgb(100);
   border-radius: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .total{
   font-weight: bold;
   }
 
-.total .price{
-  text-indent: 30rem;
-}
 
 table{
-  table-layout: fixed;
-}
-
-tr{
-  display: inline-block;
+  width: 100%;
 }
 
 .box td{
-  width: 33%;
-  text-align: center;
   padding: 1rem 4rem;
+  
+}
+
+.item td{
+  border-bottom-width: 0.05rem;
+  border-bottom-style: dashed;
+  border-bottom-color: rgb(100);
+  width: 40%;
 }
 
 .product_list td{
   width: 25%;
-  text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
 }
 
 .price{
@@ -298,13 +329,13 @@ tr{
 }
 
 .list_img{
-  width: 100%;
+  width: 50%;
   height: auto;
-  margin-left: -3rem;
+  float: left;
 }
 
 .check_img{
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
