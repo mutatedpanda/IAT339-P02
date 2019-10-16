@@ -276,13 +276,9 @@ h4.box_title{
   display: inline-block;
 }
 
-.product_list{
-  width: 100%;
-}
-
 .product_item{
   display: inline-block;
-  width: 90%;
+  width: 85%;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
   border-bottom-color: rgb(100);
@@ -438,46 +434,6 @@ li{
   padding-bottom: 1rem;
 }
 
-nav label, nav #hamburger{
-  display: none;
-  font-size: 40px;
-}
-
-@media (max-width: 54rem){
-  header{
-    text-align: center;
-  }
-
-  nav label{
-    display: inline;
-    float: left;
-    margin-top: 2.5rem;
-    margin-left:  2rem;
-  }
-
-
-  .logo{
-    margin-left: 0;
-  }
-
-  nav a{
-    display: block;
-  }
-
-  .menu{
-    display: none;
-    float: left;
-    text-align: left;
-  }
-
-  nav #hamburger{
-    display: inline;
-  }
-
-  nav #hamburger:checked ~ .menu{
-    display: block;
-  }
-}
 
 
 
