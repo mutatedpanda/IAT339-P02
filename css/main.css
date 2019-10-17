@@ -437,7 +437,32 @@ li{
   padding-bottom: 1rem;
 }
 
+.sale_img{
+  max-width: 100%;
+   height: auto;
+     margin-left: 1rem;
+}
 
+ul.dot {
+  list-style-type: square;
+   margin-left: 35px;
+   font-size: 9px;
+   font-weight: lighter;
+}
+
+p{
+  margin-top: 0px;
+ margin-bottom: 15px;
+ margin-right: 0px ;
+ margin-left: 50px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin : 1rem;
+  padding-bottom: 2rem;
+}
 
 
 
