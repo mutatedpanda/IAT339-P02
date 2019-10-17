@@ -9,6 +9,7 @@
     <title>P01 Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/hamburger.css" rel="stylesheet">
 
   </head>
 
@@ -18,7 +19,10 @@
     <header>
 
       <a href="index.html"><img src="img/logo.png" class="logo" alt="LOGO"></a>
-      <nav class="navigation">        
+      <nav class="navigation"> 
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>  
+        <div class="menu">       
         <a href="#interactive_elements" class="navlink">INTERACTIVE ELEMENTS</a>
         <a href="#text_elements" class="navlink">TEXT ELEMENTS</a>
         <a href="#combined_elements" class="navlink">COMBINED ELEMENTS</a>
@@ -26,6 +30,7 @@
         <a href="#brand_components" class="navlink">BRAND COMPONENTS</a>
         <a href="#templates" class="navlink">TEMPLATES</a>
         <a href="#citations" class="navlink">CITATIONS</a>
+        </div>
       </nav>
 
     </header>
