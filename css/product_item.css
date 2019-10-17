@@ -1,0 +1,107 @@
+.item_container img{
+    height: 30rem;
+    float: left;
+    margin-bottom: 3rem;
+}
+
+.item_container{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    width:100%;
+}
+
+.item_container .box{
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.buy{
+    text-align: center;
+}
+
+.review, .element{
+    display: inline-block;
+    width: 100%;
+}
+
+.review{
+    margin-top: 1rem; 
+}
+
+.review_box{
+    margin-top: 5rem;
+    padding-bottom: 8rem;
+}
+
+.rating {
+  float: left;
+  direction: rtl;
+  font-size: 3rem;
+  display: block;
+  margin-left: -1rem;
+}
+
+.rating > span{
+  display: inline-block;
+  width: 1.1em;
+  position: relative;
+  color: orange;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.rating input{
+    display: none;
+}
+
+.rating label{
+    font-size: 3rem;
+}
+
+#star1:checked{
+    content: "\2605";
+  }
+
+.comment_section, .comment_section textarea{
+    display: block;
+    margin-top: 10rem;
+}
+
+.comment_section textarea{
+    width: 100%;
+    resize: none;
+}
+
+.review_box button{
+    float: right;
+    margin-top: 1rem;
+}
+
+.comment_label{
+    display: block;
+    float: left;
+}
+
+
+@media (max-width: 82rem){
+    .item_container img{
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .item_container .box{
+        margin-right: auto;
+        margin-left: auto;
+        witdth: 100%;
+        float: none;
+    }
+}
