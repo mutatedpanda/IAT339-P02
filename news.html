@@ -10,6 +10,8 @@
     <title>About</title>
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
 
   </head>
 
@@ -20,11 +22,15 @@
 
       <a href="index.html"><img src="img/logo.png" class="logo" alt="LOGO"></a>
       <nav class="navigation">
-        <a href="index.html" class="navlink">Style Guide Main</a>
-        <a href="product_list.html" class="navlink">Checkout Template</a>
-          <a href="news.html" class="navlink">News</a>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>  
+        <div class="menu">    
+         <a href="index.html" class="navlink">Home</a>
+        <a href="product_list.html" class="navlink">Products</a>
+          <a href="news.html" class="navlink">Events & Updates</a>
         <a href="about.html" class="navlink">About</a>
-        <a href="contact.html" class="navlink">Contact</a>
+        <a href="contact.html" class="navlink">Contact Us</a>
+        </div>
 
       </nav>
     </header>
