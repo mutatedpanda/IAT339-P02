@@ -5,17 +5,18 @@
 header{
   background-color: #262C68;
   color: #FBFBFF;
-  padding-bottom: 2rem;
   font-family: Futura-Bold;
   width: 100%;
   position: absolute;
+  box-shadow: 0px 0px 10px black;
+  padding-left: 2rem;
+  padding-bottom: .7rem;
 }
 
 .logo{
-  width:100px;
+  width:80px;
   height: auto;
-  margin-top: 2.5rem;
-  margin-left: 2.5rem;
+  margin-top: 1.5rem;
   font-size: 30px;
   font-family: Futura-Bold;
 }
@@ -23,10 +24,11 @@ header{
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .body{
-  padding: 10rem 7rem;
+  padding: 6rem 7rem;
 }
 
 .element {
@@ -55,7 +57,7 @@ h4{
 h5{
   font-size: 20px;
   font-family: Futura-Bold;
-  color: #d5d5d5;;
+  color: #d5d5d5;
 }
 
 p, li{
@@ -64,7 +66,6 @@ p, li{
 }
 
 nav{
-  padding-right: 2.5rem;
   padding-left:  .7rem;
   text-align: right;
 
@@ -75,7 +76,7 @@ nav{
 
 .navlink{
   color: #d5d5d5;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -117,6 +118,7 @@ label{
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
 .container{
   text-align: center;
+  position: relative;
 }
 
 .container .imglink{
@@ -131,9 +133,10 @@ label{
 }
 
 .container .textimg{
+  top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -300%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition-property: opacity; 
   transition-duration: 1s;
@@ -282,10 +285,9 @@ h4.box_title{
 .product_item{
   display: inline-block;
   width: 85%;
-  border-bottom-width: 0.15rem;
+  border-bottom-width: 0.1rem;
   border-bottom-style: solid;
   border-bottom-color: rgb(100);
-  border-radius: 40px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
