@@ -103,10 +103,6 @@
     float: left;
 }
 
-p{
-    margin:0;
-}
-
 
 @media (max-width: 85.8rem){
     .flex-container img{

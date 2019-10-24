@@ -10,6 +10,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
 
   </head>
 
@@ -41,37 +42,75 @@
             <h4 class="box_title">CHECKOUT</h4>
             <table>
           <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
             <td><img src="img/p7.png" class="check_img"></td>
-            <td class="product">Product 1</td>
-            <td class = "price">$0.00</td>
-          </tr>
-          <!-- https://i5.walmartimages.com/asr/1115958d-37af-4ae7-bed0-9c19cd4b27c5_1.1bf6427daa2484bc6363460da8e1468e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff -->
-          <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p7.png" class="check_img"></td>
-            <td class="product">Product 2</td>
-            <td class = "price">$0.00</td>
+            <td class="product">Apple MacBook Air - Space Grey</td>
+            <td class = "price">$1,199.99</td>
           </tr>
           <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p7.png" class="check_img"></td>
-            <td class="product">Product 3</td>
-            <td class = "price">$0.00</td>
+           <td><img src="img/p8.png" class="check_img"></td>
+            <td class="product">Beats by Dr. Dre Solo3 Club Collection</td>
+            <td class = "price">$179.99</td>
+          </tr>
+          <tr class="item">
+           <td><img src="img/p9.png" class="check_img"></td>
+            <td class="product">Harman Kardon Astra Bluetooth Speaker</td>
+            <td class = "price">$429.99</td>
           </tr>
           <tr class="total">
             <td>TOTAL</td>
             <td></td>
-            <td class="price">$0.00</td>
+            <td class="price">$1,809.97</td>
           </tr>
         </table>
-            <a href="payment.html"><button type="submit" class="box_button"><h5>CHECK OUT</h5></button></a>
+            <button type="submit" class="box_button" id="buy"><h5>CHECK OUT</h5></button>
         </div> 
 
         </section>
       </section>
     </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="payment_box">
+            <span class="close">&times;</span>
+            <form action="">
+          <h4 class="box_title">PAYMENT</h4>
+          <p>
+            <label for = "payment_method">How would you like to pay?</label>
+            <input type = "radio" id ="payment_method" name="payment_method">Credit Card</input>
+            <input type = "radio" id ="payment_method" name="payment_method">Debit Card</input>
+            <input type = "radio" id ="payment_method" name="payment_method">PayPal</input>
+          </p>
+          <div class="flex-container">
+          <p>
+            <label for="card_name">Name on Card</label>
+            <input class="text_box" type="text" id="card_name" placeholder="Jane Sarah Doe">
+          </p>
+          <p>
+            <label for="card_number">Credit Card Number</label>
+            <input class="text_box" type="text" id="card_number" placeholder="0000-0000-0000-0000">
+          </p>
+          <p>
+            <label for="card_cvv">CVV</label>
+            <input class="text_box" type="text" id="card_cvv" placeholder="123">
+          </p>
+          <p>
+            <label for="card_exp">Exp Date</label>
+            <input class="text_box" type="text" id="card_exp" placeholder="mmyy">
+          </p>
+          </div>
+          <button type="submit" class="box_button"><h5>SUBMIT</h5></button>
+            </form>
+        </div>
+    </div>
+
+  </div>
+
   </body>
+
+  <script src="js/checkout.js"></script>
 
 <footer id="contact"> 
 
