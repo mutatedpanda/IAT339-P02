@@ -318,15 +318,19 @@ table{
 }
 
 .item td{
-  border-bottom-width: 0.05rem;
-  border-bottom-style: dashed;
-  border-bottom-color: rgb(100);
   width: 30%;
 }
 
 .product_list td{
   width: 25%;
   padding: 1rem;
+}
+
+.total td{
+  border-top-width: 0.05rem;
+  border-top-style: dashed;
+  border-top-color: rgb(100);
+  padding-top: 2rem;
 }
 
 .left{

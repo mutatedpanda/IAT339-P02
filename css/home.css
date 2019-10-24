@@ -35,6 +35,11 @@ margin-top: 5.7rem;
 }
 
 .start{
-    margin-top: -5rem;
+    margin-top: -3rem;
+}
+
+.body{
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
