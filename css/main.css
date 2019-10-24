@@ -338,6 +338,16 @@ table{
   height: auto;
 }
 
+.sale_img{
+
+  max-width: 100%;
+   height: auto;
+     display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
 .box p{
   padding-bottom: 1rem;
 }
