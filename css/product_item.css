@@ -1,25 +1,39 @@
-.item_container img{
-    height: 30rem;
-    float: left;
+.element{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.flex-container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+} 
+ 
+.flex-container > div { 
+  width: 30rem;
+  margin: 0 2rem;
+  margin-bottom: -.2rem; 
+  padding:0; 
+} 
+
+.flex-container img{
+    width: 30rem;
     margin-bottom: 3rem;
+    padding-right: 5rem;
+    horizontal-align: middle;
+    padding-top: 10rem;
 }
 
-.item_container{
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    width:100%;
-}
-
-.item_container .box{
-    width: 45%;
+.flex-container .box{
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
-    display: inline-block;
+    padding: 3rem;
 }
 
 .buy{
     text-align: center;
+    margin-top: 4rem;
 }
 
 .review, .element{
@@ -89,19 +103,13 @@
     float: left;
 }
 
+p{
+    margin:0;
+}
 
-@media (max-width: 82rem){
-    .item_container img{
-        margin-right: auto;
-        margin-left: auto;
-        float: none;
-        text-align: center;
-    }
 
-    .item_container .box{
-        margin-right: auto;
-        margin-left: auto;
-        witdth: 100%;
-        float: none;
+@media (max-width: 85.8rem){
+    .flex-container img{
+    padding-top: 0;
     }
 }

@@ -24,6 +24,7 @@ nav label, nav #hamburger{
     float: left;
     margin-top: 1rem;
     margin-left:  2rem;
+    cursor: pointer;
   }
 
   nav .navlink{
