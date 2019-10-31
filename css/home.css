@@ -10,7 +10,7 @@ margin-top: 5.7rem;
  z-index: -1;
 }
 
-.front_img h2{
+.front_img h1{
     color: #FBFBFF;
     position: absolute;
     bottom: 1rem;
@@ -41,5 +41,17 @@ margin-top: 5.7rem;
 .body{
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+@media (max-width: 33rem){
+    .front_img h1{
+        font-size: 3rem; 
+    }
+}
+
+@media (max-width: 25rem){
+    .front_img h1{
+        font-size: 2.3rem; 
+    }
 }
 

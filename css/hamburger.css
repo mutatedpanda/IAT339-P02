@@ -15,6 +15,10 @@ nav label, nav #hamburger{
     padding-bottom: .7rem;
   }
 
+  .body{
+  padding: 3rem;
+  }
+
   .logo{
       margin-left: -1rem;
   }

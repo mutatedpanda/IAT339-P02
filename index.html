@@ -4,6 +4,7 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- referenced assignment from IAT 235 -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
     <title>P01 Style Guide</title>
@@ -37,18 +38,18 @@
     <div class="body">
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements" class="start">
-      <h2>Interactive element</h2>
+      <h1>Interactive element</h1>
 
 
       <section class="element">
-        <h3>In-text link</h3>
-        <h4>CSS selector:</h4>
+        <h2>In-text link</h2>
+        <h3>CSS selector:</h3>
         <p>.intext</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code><p>&lt;p&gt;This paragraph contains an in-text&lt;a href="http://www.google.ca" class="intext"&gt;link&lt;/a&gt;.&lt;/p&gt;</p></code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <p>This paragraph contains an in-text <a href="http://www.google.ca" class="intext">link</a>.</p>
       </section>
 
@@ -56,15 +57,15 @@
       <!-- Default Button styling section -->
       <section class="element">
 
-        <h3>Navigation Link</h3>
+        <h2>Navigation Link</h2>
         
-        <h4>CSS selector:</h4>
+        <h3>CSS selector:</h3>
         <p>.navlink</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code><p>&lt;a href="#" class="navlink"&gt;Default Nav Link&lt;/a&gt;</p></code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <nav>
           <a href="#" class="navlink">DEFAULT NAV LINK</a>
         </nav>
@@ -73,25 +74,25 @@
 
 
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <h4>CSS selector:</h4>
+        <h2>Submit/Reset Buttons</h2>
+        <h3>CSS selector:</h3>
         <p>button</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code><p>&lt;button type = "reset"&gt;RESET&lt;/button&gt;</p></code>
 
-        <h4>Rendered element:</h4>
-        <button type = "reset"><h5>RESET</h5></button>
+        <h3>Rendered element:</h3>
+        <button type = "reset"><h4>RESET</h4></button>
       </section>
 
       <!-- learnt in first lab -->
       <section class="element">
-        <h3>Text Input Field with Label</h3>
+        <h2>Text Input Field with Label</h2>
 
-        <h4>CSS selector:</h4>
+        <h3>CSS selector:</h3>
         <p>label, .text_box</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;p&gt;</p>
           <p>&lt;label for="input"&gt;This is a label for the input&lt;/label&gt;</p>
@@ -99,7 +100,7 @@
           <p>&lt;/p&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <p>
           <label for="input">This is a label for the input</label>
           <input class="text_box" id="input" type="text">
@@ -108,18 +109,18 @@
 
       <!-- referenced https://www.w3schools.com/html/tryit.asp?filename=tryhtml_radio -->
       <section class="element">
-        <h3>Radio Button with Label</h3>
-        <h4>CSS selector:</h4>
+        <h2>Radio Button with Label</h2>
+        <h3>CSS selector:</h3>
         <p>label, #answers</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;label for = "answers"&gt;This is a label for the input&lt;/label&gt;</p>
           <p>&lt;input type = "radio" id ="answers" name="answer"&gt;yes&lt;/input&gt;</p>
           <p>&lt;input type = "radio" id ="answers" name="answer"&gt;no&lt;/input&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <label for = "answers">Are you having a good day?</label>
         <input type = "radio" id ="answers" name="answer">yes</input>
         <input type = "radio" id ="answers" name="answer">no</input>
@@ -127,11 +128,11 @@
 
 
       <section class="element">
-        <h3>Image as a Link</h3>
-        <h4>CSS selector:</h4>
+        <h2>Image as a Link</h2>
+        <h3>CSS selector:</h3>
         <p>.container, .imglink, .textimg</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;div class= "container"&gt;</p>
           <p>&lt;a href="https://www.google.ca"&gt;&lt;img src="img/cat.jpg" alt="the image couldn't load, but it was a cute cat" class="imglink"&gt;&lt;/a&gt;<p>
@@ -141,11 +142,11 @@
           <p>&lt;/div&gt;</p>
           </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <div class= "container">
           <a href="https://www.google.ca"><img src="img/cat.jpg" alt="the image couldn't load, but it was a cute cat" class="imglink"></a>
           <div class="textimg">
-          <h4>cats</h4>
+          <h3>cats</h3>
         </div>
         </div>
       </section>
@@ -158,49 +159,49 @@
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h2>Text Elements</h2>
+      <h1>Text Elements</h1>
 
       <section class="element">
-        <h3>Headings</h3>
+        <h2>Headings</h2>
 
-        <h4>CSS selector:</h4>
+        <h3>CSS selector:</h3>
         <p>h2, h3, h4, h5</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
-          <p>&lt;h2&gt;Heading 1&lt;/h2&gt;</p>
-          <p>&lt;h3&gt;Heading 2&lt;/h3&gt;</p>
-          <p>&lt;h4&gt;Heading 3&lt;/h4&gt;</p>
-          <p>&lt;h5&gt;Heading 4&lt;/h5&gt;</p>
+          <p>&lt;h1&gt;Heading 1&lt;/h1&gt;</p>
+          <p>&lt;h2&gt;Heading 2&lt;/h2&gt;</p>
+          <p>&lt;h3&gt;Heading 3&lt;/h3&gt;</p>
+          <p>&lt;h4&gt;Heading 4&lt;/h4&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
-        <h2>Heading 1</h2>
-        <h3>Heading 2</h3>
-        <h4>Heading 3</h4>
-        <h5>Heading 4</h5>
+        <h3>Rendered element:</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
       </section>
 
       <section class="element">
-        <h3>Paragraphs</h3>
+        <h2>Paragraphs</h2>
 
-        <h4>CSS selector:</h4>
+        <h3>CSS selector:</h3>
         <p>p</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code><p>&lt;p&gt;Hello. This is a paragraph...kinda. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</p></code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <p>Hello. This is a paragraph...kinda. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
 
       <section class="element">
-        <h3>Numbered Lists</h3>
+        <h2>Numbered Lists</h2>
 
-        <h4>CSS selector:</h4>
+        <h3>CSS selector:</h3>
         <p>ol, li</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;ol&gt;</p>
           <p>&lt;li&gt;one&lt;/li&gt;</p>
@@ -209,7 +210,7 @@
           <p>&lt;/ol&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <ol> 
           <li>one</li>
           <li>two</li>
@@ -224,14 +225,14 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>Combined Elements</h2>
+      <h1>Combined Elements</h1>
 
       <section class="element">
-        <h3>Main Navigation</h3>
-        <h4>CSS selector:</h4>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
         <p>.navlink</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;nav&gt;</p>
           <p>&lt;a href="#" class="navlink"&gt;HOME&lt;/a&gt;</p>
@@ -242,7 +243,7 @@
           <p>&lt;/nav&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <nav>
           <a href="#" class="navlink">HOME</a>
           <a href="#" class="navlink">PRODUCTS</a>
@@ -253,11 +254,11 @@
       </section>
 
       <section class="element">
-        <h3>Product/Service Listing</h3>
-        <h4>CSS selector:</h4>
+        <h2>Product/Service Listing</h2>
+        <h3>CSS selector:</h3>
         <p>.product_list, .product_item, .list_img</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;table class="product_list"&gt;</p>
           <p>&lt;tr class="product_item"&gt;</p>
@@ -275,7 +276,7 @@
           <p>&lt;/table&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <table class="product_list">
           <tr class="product_item">
             <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
@@ -295,11 +296,11 @@
       </section>
 
       <section class="element">
-        <h3>Payment Form</h3>
-        <h4>CSS selector:</h4>
+        <h2>Payment Form</h2>
+        <h3>CSS selector:</h3>
         <p>.box, .box_title, .text_box, .box_button</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;div class="box"&gt;</p>
           <p>&lt;h4 class="box_title"&gt;PAYMENT&lt;/h4&gt;</p>
@@ -327,13 +328,13 @@
           <p>&lt;label for="card_exp"&gt;Exp Date&lt;/label&gt;</p>
           <p>&lt;input class="text_box" type="text" id="card_exp" placeholder="mmyy"&gt;</p>
           <p>&lt;/p&gt;</p>
-          <p>&lt;button type="submit" class="box_button"&gt;&lt;h5&gt;SUBMIT&lt;/h5&gt;&lt;/button&gt;</p>
+          <p>&lt;button type="submit" class="box_button"&gt;&lt;h4&gt;SUBMIT&lt;/h4&gt;&lt;/button&gt;</p>
           <p>&lt;/div&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <div class="payment_box">
-          <h4 class="box_title">PAYMENT</h4>
+          <h3 class="box_title">PAYMENT</h3>
           <p>
             <label for = "payment_method">How would you like to pay?</label>
             <input class="first_payment" type = "radio" id ="payment_method" name="payment_method">Credit Card</input>
@@ -358,16 +359,16 @@
             <input class="text_box" type="text" id="card_exp" placeholder="mmyy">
           </p>
           </div>
-          <button type="submit" class="box_button"><h5>SUBMIT</h5></button>
+          <button type="submit" class="box_button"><h4>SUBMIT</h4></button>
         </div>
       </section>
 
       <section class="element" class="box">
-        <h3>Checkout Cart</h3>
-        <h4>CSS selector:</h4>
+        <h2>Checkout Cart</h2>
+        <h3>CSS selector:</h3>
         <p>.box, .box_title, .product, .price, .total, .box_button, button, td, table</p>
 
-        <h4>Sample code:</h4>
+        <h3>Sample code:</h3>
         <code>
           <p>&lt;div class="box"&gt;</p>
           <p>&lt;h4 class="box_title"&gt;CHECKOUT&lt;/h4&gt;</p>
@@ -397,9 +398,9 @@
           <p>&lt;/div&gt;</p>
         </code>
 
-        <h4>Rendered element:</h4>
+        <h3>Rendered element:</h3>
         <div class="box">
-            <h4 class="box_title">CHECKOUT</h4>
+            <h3 class="box_title">CHECKOUT</h3>
             <table>
           <tr class="item">
             <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
@@ -426,7 +427,7 @@
             <td class="price">$0.00</td>
           </tr>
         </table>
-            <button type="submit" class="box_button"><h5>CHECK OUT</h5></button> 
+            <button type="submit" class="box_button"><h4>CHECK OUT</h4></button> 
         </div>
       </section>
 
@@ -437,21 +438,21 @@
 
     <!-- //BRAND IDEAS SECTION -->
     <section id="brand_ideas">
-      <h2>Basic Branding Ideas</h2>
+      <h1>Basic Branding Ideas</h1>
       <section class="element">
-        <h3>What Does the Company do or Offer?</h3>
+        <h2>What Does the Company do or Offer?</h2>
         <p>
           This company provides technologies, ranging from phones to SD cards, from different companies. 
         </p>
       </section>
       <section class="element">
-        <h3>Who is the Company to Potential Customers? (as a Person)</h3>
+        <h2>Who is the Company to Potential Customers? (as a Person)</h2>
         <p>
           To the potential customers, this company is somewhere they can go to to buy devices, accessories for the devices and appliances. They also supply different companies' products in one place.
         </p>
       </section>
       <section class="element">
-        <h3>Why Might this Company Entice Someone to Purchase a Product or Service?</h3>
+        <h2>Why Might this Company Entice Someone to Purchase a Product or Service?</h2>
         <p>
           This company may entice someone to purchase a product because of the deals they may provide for certain products. This company also allows the customer to compare the details of two different companies' products, which makes it more convenient for them.
         </p>
@@ -463,18 +464,18 @@
 
     <!-- //BRAND COMPONENTS SECTION -->
     <section id="brand_components">
-      <h2>Branding Components</h2>
+      <h1>Branding Components</h1>
       <section class="element">
-        <h3>Fonts</h3>
+        <h2>Fonts</h2>
         <p class="font1">Bebas Neue</p>
         <p class="font2">Futura Bold</p>
         <p class="font3">Arial</p>
         
       </section>
       <section class="element">
-        <h3>Colour Palettes</h3>
+        <h2>Colour Palettes</h2>
         <table>
-          <tr>
+          <tr class="colors">
             <th class="color1"></th>
             <th class="color2"></th>
             <th class="color3"></th>
@@ -485,7 +486,7 @@
         </table>
       </section>
       <section class="element">
-        <h3>Potential Imagery / Art Direction</h3>
+        <h2>Potential Imagery / Art Direction</h2>
   </div>
 
         <!-- https://isorepublic.com/wp-content/uploads/2018/11/office-notebook.jpg -->
@@ -501,18 +502,18 @@
 <div class="body">
     <!-- //TEMPLATES -->
     <section id="templates">
-      <h2>Templates</h2>
+      <h1>Templates</h1>
       <section class="element">
-        <h3><a href="product_list.html">Product Listing Web-Page</a></h3>
+        <h2><a href="product_list.html">Product Listing Web-Page</a></h2>
       </section>
       <section class="element">
-        <h3><a href="checkout.html">Checkout Web-Page</a></h3>
+        <h2><a href="checkout.html">Checkout Web-Page</a></h2>
       </section>
     </section>
 
 
     <section id="citations">
-      <h2>Citations</h2>
+      <h1>Citations</h1>
 
       <ul>
         <li>The Verge. (2018). New Best Buy logo  diminishes the shopping tag because brick-and-mortar stores are dead [image]. (editted by Melissa Ly). Recieved from https://www.theverge.com/2018/5/9/17334848/best-buy-logo-design-san-serif-font-shopping-tag</li>

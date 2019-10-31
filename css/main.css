@@ -39,23 +39,23 @@ body {
   border-top-color: black;
 }
 
-h2 {
+h1 {
   margin-top: 1rem;
   font-size: 50px;
   font-family: BebasNeue;
 }
 
-h3 {
+h2 {
   font-size: 35px;
   font-family: Futura-Bold;
 }
 
-h4{
+h3{
   font-size: 25px;
   text-transform: uppercase;
 }
 
-h5{
+h4{
   font-size: 20px;
   font-family: Futura-Bold;
   color: #d5d5d5;
@@ -100,7 +100,6 @@ a{
 }
 
 .intext:hover, .intext:focus{
-  background-color: #FFFDD6;
   color: #00007A;
 }
 
@@ -148,7 +147,7 @@ label{
   opacity: 100;
 }
 
-h2, h3, p{
+h1, h2, p{
   color: #242038;
 }
 
@@ -172,7 +171,7 @@ button{
   transition-duration: 0.5s;
 }
 
-button h5{
+button h4{
   padding: 0;
   margin: 0;
   transition-property: background-color, color; 
@@ -189,10 +188,6 @@ button:hover h5, button:focus h5{
 
 input{
   border-radius: 3px;
-}
-
-input[type="radio"]{
-  margin-left: 3rem;
 }
 
 .first_payment[type="radio"]{
@@ -273,7 +268,7 @@ ul{
   padding:0; 
 } 
 
-h4.box_title{
+h3 .box_title{
   margin-top: 0; 
   padding-bottom: .5rem;
   font-size: 1.5rem;
@@ -293,12 +288,15 @@ h4.box_title{
   background-color: white;
 }
 
-.product_item{
-  display: inline-block;
-  width: 85%;
-  border-bottom-width: 0.1rem;
-  border-bottom-style: solid;
+.product_list table, .product_list th, .product_list td{
+  border-bottom-width: .1rem;
+  border-bottom-style:solid;
   border-bottom-color: rgb(100);
+  border-collapse: collapse;
+}
+
+.product_item{
+  width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -317,8 +315,9 @@ table{
   
 }
 
-.item td{
-  width: 30%;
+.item td, .total td{
+  width: 33%;
+  padding: 0;
 }
 
 .product_list td{
@@ -351,7 +350,7 @@ table{
 }
 
 .check_img{
-  width: 50%;
+  width: 7rem;
   height: auto;
 }
 
@@ -413,12 +412,9 @@ font-style: normal;
   height: auto;
 }
 
-tr, th{
-  padding: 70px 70px 70px 70px;
-}
-
-th{
-  border: 3px solid #000000;
+tr{
+  padding: 1rem;
+  height: 7rem;
 }
 
 .color1{
@@ -455,7 +451,7 @@ footer{
 
 }
 
-footer h2{
+footer h1{
   color: #FBFBFF;
   padding-left:  2.5rem;
 }
@@ -484,18 +480,40 @@ ul.dot {
  margin-left: 50px;
 }
 
-h1 {
-  font-size: 18px;
-  font-weight: lighter;
-  margin : 1rem;
-  padding-bottom: 2rem;
-}
-
 @media (max-width: 76rem){
   .flex-container > p { 
     width:100%; 
   } 
 }
 
+@media (max-width: 56rem){
+    .payment_box, .box{
+        padding: 1.5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 33rem){
+  .product_list td{
+     display: block;
+  }
+
+  .product_list table, .product_list th, .product_list td{
+      border: none;
+}
+
+  .product_list td{
+      width: 100%;
+      text-align: center;
+  }
+
+  .right{
+      text-align: left;
+  }
+
+  .check_img{
+      margin: 0;
+  }
+}
 
 

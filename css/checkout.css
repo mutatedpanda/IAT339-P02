@@ -30,3 +30,54 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+@media (max-width: 35rem){
+    .item td{
+        margin-bottom: 2rem;
+        margin-right:-6rem; 
+    }
+
+    .box td{
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 14px;
+    }
+
+    .price{
+        text-align: center;
+    }
+
+    tr{
+        height: auto
+    }
+
+    .total td{
+        border: none;
+        display: inline;
+    }
+
+    .total_name{
+        float: left;
+    }
+
+    h4{
+        font-size: 13px;
+    }
+
+    label, p{
+        font-size: 14px;
+    }
+
+    .payment_box{
+        width: auto;
+        margin-top: -3rem; 
+        box-shadow: none;
+    }
+
+    .close{
+        margin-top: -2rem; 
+        margin-right: -1rem;
+    }
+}

@@ -3,6 +3,10 @@
   padding-bottom: 5rem;
 }
 
+.box{
+   box-shadow: none;
+}
+
 .flex-container { 
   display: flex; 
   flex-wrap: wrap; 
@@ -107,5 +111,54 @@
 @media (max-width: 85.8rem){
     .flex-container img{
     padding-top: 0;
+    }
+}
+
+@media (max-width: 56rem){
+    .flex-container img{
+        width: 100%;
+    }
+
+    .rating, .rating label{
+    font-size: 2.7rem;
+}
+    h2{
+        font-size: 30px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+        }
+
+    h4{
+        font-size: 13px;
+    }
+
+    .flex-container .box{
+        padding: 1.5rem;
+    }
+
+    .review_box{
+        padding: 1.5rem;
+        padding-bottom: 5rem;
+    }
+
+    .review_box p{
+        margin-top: -4rem;
+    }
+
+    .buy{
+        margin-top: 0;
+    }
+
+    .rating{
+    }
+
+    .rating, .rating label{
+        font-size: 2rem;
     }
 }
