@@ -5,17 +5,19 @@
 header{
   background-color: #262C68;
   color: #FBFBFF;
-  padding-bottom: 2rem;
   font-family: Futura-Bold;
   width: 100%;
   position: absolute;
+  box-shadow: 0px 0px 10px black;
+  padding-left: 2rem;
+  padding-bottom: .7rem;
+  z-index: 1;
 }
 
 .logo{
-  width:100px;
+  width:80px;
   height: auto;
-  margin-top: 2.5rem;
-  margin-left: 2.5rem;
+  margin-top: 1.5rem;
   font-size: 30px;
   font-family: Futura-Bold;
 }
@@ -23,10 +25,11 @@ header{
 body {
   margin: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .body{
-  padding: 10rem 7rem;
+  padding: 6rem 7rem;
 }
 
 .element {
@@ -55,7 +58,7 @@ h4{
 h5{
   font-size: 20px;
   font-family: Futura-Bold;
-  color: #d5d5d5;;
+  color: #d5d5d5;
 }
 
 p, li{
@@ -98,7 +101,6 @@ p, li{
 }
 
 nav{
-  padding-right: 2.5rem;
   padding-left:  .7rem;
   text-align: right;
 
@@ -109,7 +111,7 @@ nav{
 
 .navlink{
   color: #d5d5d5;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -151,6 +153,7 @@ label{
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
 .container{
   text-align: center;
+  position: relative;
 }
 
 .container .imglink{
@@ -165,9 +168,10 @@ label{
 }
 
 .container .textimg{
+  top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -300%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition-property: opacity; 
   transition-duration: 1s;
@@ -264,7 +268,7 @@ ul{
   border: 5px solid #BEBBBB;
   border-radius: 3px;
   padding-top: 50px;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   padding-left: 50px;
   padding-right: 50px;
   box-shadow: 10px 10px 20px grey;
@@ -276,7 +280,7 @@ ul{
   border: 5px solid #BEBBBB;
   border-radius: 3px;
   padding-top: 50px;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 5rem;
@@ -286,6 +290,22 @@ ul{
   margin-right: auto;
   margin-left: auto;
 }
+
+.payment_box p{
+    margin-left: 0;
+}
+
+.flex-container { 
+  display: flex; 
+  flex-wrap: wrap; 
+} 
+ 
+.flex-container > p { 
+  width: 40%; 
+  margin-bottom: .5rem; 
+  margin-right: 3rem;
+  padding:0; 
+} 
 
 h4.box_title{
   margin-top: 0; 
@@ -297,6 +317,7 @@ h4.box_title{
 }
 
 .box_button{
+  margin-top: 1rem;
   float: right;
 }
 
@@ -306,25 +327,17 @@ h4.box_title{
   background-color: white;
 }
 
-.cvv_text_box, .exp_text_box{
-  width: 45%;
-  padding: 5px 5px 5px 5px;
-  background-color: white;
-  display: inline-block;
-}
-
 .product_item{
   display: inline-block;
   width: 85%;
-  border-bottom-width: 0.15rem;
+  border-bottom-width: 0.1rem;
   border-bottom-style: solid;
   border-bottom-color: rgb(100);
-  border-radius: 40px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.total{
+.total td{
   font-weight: bold;
   }
 
@@ -339,14 +352,19 @@ table{
 }
 
 .item td{
-  border-bottom-width: 0.05rem;
-  border-bottom-style: dashed;
-  border-bottom-color: rgb(100);
-  width: 40%;
+  width: 30%;
 }
 
 .product_list td{
   width: 25%;
+  padding: 1rem;
+}
+
+.total td{
+  border-top-width: 0.05rem;
+  border-top-style: dashed;
+  border-top-color: rgb(100);
+  padding-top: 2rem;
 }
 
 .left{
@@ -362,9 +380,8 @@ table{
 }
 
 .list_img{
-  width: 50%;
-  height: auto;
-  float: left;
+  height: 5rem;
+  width: auto;
 }
 
 .check_img{
@@ -497,18 +514,10 @@ ul.dot {
 }
 
 
-p{
-  margin-top: 0px;
- margin-bottom: 15px;
- margin-right: 0px ;
- margin-left: 50px;
-}
-
-h1 {
-  font-size: 18px;
-  font-weight: lighter;
-  margin : 1rem;
-  padding-bottom: 2rem;
+@media (max-width: 76rem){
+  .flex-container > p { 
+    width:100%; 
+  } 
 }
 
 

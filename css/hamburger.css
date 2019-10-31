@@ -7,33 +7,39 @@ nav label, nav #hamburger{
     display: inline;
 }
 
-@media (max-width: 50rem){
+@media (max-width: 56rem){
   header{
+    position: fixed;
     text-align: center;
+    padding-left: 0;
+    padding-bottom: .7rem;
+  }
+
+  .logo{
+      margin-left: -1rem;
   }
 
   nav label{
     display: inline;
     float: left;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-left:  2rem;
+    cursor: pointer;
   }
 
-
-  .logo{
+  nav .navlink{
+    display: block;
+    padding: 1rem 3rem;
     margin-left: 0;
   }
 
-  nav a{
-    display: block;
-    margin-bottom: .5rem;
+  nav .navlink:hover{
+    background-color:  #657ED4;
   }
 
   .menu{
     display: none;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: left;
   }
 
   nav #hamburger{
@@ -44,4 +50,5 @@ nav label, nav #hamburger{
     display: block;
     margin-top: 2rem;
   }
+
 }
