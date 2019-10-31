@@ -63,6 +63,40 @@ p, li{
   font-size: 18px;
 }
 
+.about {
+  font-weight: lighter;
+  margin : 1rem;
+  padding-bottom: 1rem;
+}
+
+.contactWay {
+  line-height: 2em;
+}
+
+.hours {
+  margin-left: 270px;
+  margin-top: -150px;
+  line-height: 0.7em;
+}
+
+.events {
+  margin-top: 2rem;
+  line-height: 1.5em;
+}
+
+.map-responsive{
+  margin-left:600px;
+  margin-top:-220px;
+  height:80%;
+  width: 100%;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    max-width: 100%;
+}
+
 nav{
   padding-right: 2.5rem;
   padding-left:  .7rem;
@@ -342,9 +376,6 @@ table{
 
   max-width: 100%;
    height: auto;
-     display: block;
-margin-left: auto;
-margin-right: auto;
 
 }
 
@@ -447,11 +478,6 @@ li{
   padding-bottom: 1rem;
 }
 
-.sale_img{
-  max-width: 100%;
-   height: auto;
-     margin-left: 1rem;
-}
 
 ul.dot {
   list-style-type: square;
@@ -459,6 +485,17 @@ ul.dot {
    font-size: 9px;
    font-weight: lighter;
 }
+
+#contact p{
+ margin-left: 100px;
+}
+
+#contact h2{
+ margin-top : 0px;
+ margin-bottom : 20px;
+ margin-left: 50px;
+}
+
 
 p{
   margin-top: 0px;
