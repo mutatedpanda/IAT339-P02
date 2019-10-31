@@ -11,6 +11,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
 
   </head>
 
@@ -256,41 +257,46 @@
       <section class="element">
         <h2>Product/Service Listing</h2>
         <h3>CSS selector:</h3>
-        <p>.product_list, .product_item, .list_img</p>
+        <p>.product_list, .product_item, .list_img, .intext, .right, .price_list</p>
 
         <h3>Sample code:</h3>
         <code>
           <p>&lt;table class="product_list"&gt;</p>
           <p>&lt;tr class="product_item"&gt;</p>
-          <p>&lt;td&gt;&lt;img src="img/p1.jpg" class="list_img"&gt;&lt;/td&gt;</p>
-          <p>&lt;td&gt;Apple 13-inch MacBook Air 128GB - Space Grey&lt;/td&gt;</p>
-          <p>&lt;td&gt;$1.99&lt;/td&gt;</p>
-          <p>&lt;td&gt;&lt;a href=""&gt;More Info&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;&lt;img src="img/p7.png" class="list_img" alt="Opened Apple Macbook Air laptop"&gt;&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;Apple MacBook Air - Space Grey&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;class=" right .price_list"&gt;$1,199.99&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;tr class="product_item"&gt;</p>
-          <p>&lt;td&gt;&lt;img src="img/p5.jpeg" class="list_img"&gt;&lt;/td&gt;</p>
-          <p>&lt;td&gt;OtterBox - Pop Symmetry Series&lt;/td&gt;</p>
-          <p>&lt;td&gt;$50.00&lt;/td&gt;</p>
-          <p>&lt;td&gt;&lt;a href=""&gt;More Info&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;&lt;img src="img/p8.png" class="list_img" alt="Red and black headphones - Beats by Dr. Dre Solo3 Club Collection"&gt;&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;Beats by Dr. Dre Solo3 Club Collection&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;class=" right .price_list"&gt;$179.99&lt;/td&gt;</p>
+          <p>&lt;/tr&gt;</p>
+          <p>&lt;tr class="product_item"&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;&lt;img src="img/p9.png" class="list_img" alt="Black Harman Kardon Astra Bluetooth Speaker"&gt;&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;td&gt;&lt;a href="product_item1.html" class="intext"&gt;Harman Kardon Astra Bluetooth Speaker&lt;/a&gt;&lt;/td&gt;</p>
+          <p>&lt;class=" right .price_list"&gt;$429.99&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;/table&gt;</p>
         </code>
 
         <h3>Rendered element:</h3>
         <table class="product_list">
+    
           <tr class="product_item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p1.jpg" class="list_img"></td>
-            <td class="left">Apple 13-inch MacBook Air 128GB - Space Grey</td>
-            <td class="right">$1.99</td>
-            <td class="right"><a href="">More Info</a></td>
+            <td><a href="product_item1.html" class="intext"><img src="img/p7.png" class="list_img" alt="Opened Apple Macbook Air laptop"></a></td>
+            <td class="left"><a href="product_item1.html" class="intext">Apple MacBook Air - Space Grey</a></td>
+            <td class=" right .price_list">$1,199.99</td>
           </tr>
-          <!-- https://i5.walmartimages.com/asr/1115958d-37af-4ae7-bed0-9c19cd4b27c5_1.1bf6427daa2484bc6363460da8e1468e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff -->
           <tr class="product_item">
-            <td><img src="img/p5.jpeg" class="list_img"></td>
-            <td class="left">OtterBox - Pop Symmetry Series</td>
-            <td class="right">$50.00</td>
-            <td class="right"><a href="">More Info</a></td>
+            <td><a href="product_item1.html" class="intext"><img src="img/p8.png" class="list_img" alt="Red and black headphones - Beats by Dr. Dre Solo3 Club Collection"></a></td>
+            <td class="left"><a href="product_item2.html" class="intext">Beats by Dr. Dre Solo3 Club Collection</a></td>
+            <td class="right .price_list">$179.99</td>
+          </tr>
+          <tr class="product_item">
+            <td><a href="product_item1.html" class="intext"><img src="img/p9.png" class="list_img" alt="Black Harman Kardon Astra Bluetooth Speaker"></a></td>
+            <td class="left"><a href="product_item1.html" class="intext">Harman Kardon Astra Bluetooth Speaker</a></td>
+            <td class="right .price_list">$429.99</td>
           </tr>
         </table>
       </section>
@@ -302,16 +308,19 @@
 
         <h3>Sample code:</h3>
         <code>
-          <p>&lt;div class="box"&gt;</p>
+            <p>&lt;div class="modal-content"&gt;</p>
+          <p>&lt;div class="payment_box"&gt;</p>
+          <p>&lt;span class="close"&gt;&times;&lt;/span&gt;</p>
+
           <p>&lt;h4 class="box_title"&gt;PAYMENT&lt;/h4&gt;</p>
           <p>&lt;p&gt;</p>
           <p>&lt;label for = "payment_method"&gt;How would you like to pay?&lt;/label&gt;</p>
 
           <p>&lt;input type = "radio" id ="payment_method" name="payment_method"&gt;Credit Card&lt;/input&gt;</p>
           <p>&lt;input type = "radio" id ="payment_method" name="payment_method"&gt;Debit Card&lt;/input&gt;</p>
-          <p>&lt;input type = "radio" id ="payment_method" name="payment_method"&gt;Cash&lt;/input&gt;</p>
           <p>&lt;input type = "radio" id ="payment_method" name="payment_method"&gt;PayPal&lt;/input&gt;</p>
           <p>&lt;/p&gt;</p>
+          <p>&lt;div class="flex-container"&gt;</p>
           <p>&lt;p&gt;</p>
           <p>&lt;label for="card_name"&gt;Name on Card&lt;/label&gt;</p>
           <p>&lt;input class="text_box" type="text" id="card_name" placeholder="Jane Sarah Doe"&gt;</p>
@@ -328,16 +337,22 @@
           <p>&lt;label for="card_exp"&gt;Exp Date&lt;/label&gt;</p>
           <p>&lt;input class="text_box" type="text" id="card_exp" placeholder="mmyy"&gt;</p>
           <p>&lt;/p&gt;</p>
+          <p>&lt;/div&gt;</p>
           <p>&lt;button type="submit" class="box_button"&gt;&lt;h4&gt;SUBMIT&lt;/h4&gt;&lt;/button&gt;</p>
+          <p>&lt;/form&gt;</p>
+          <p>&lt;/div&gt;</p>
           <p>&lt;/div&gt;</p>
         </code>
 
         <h3>Rendered element:</h3>
+        <div class="modal-content">
         <div class="payment_box">
+            <span class="close">&times;</span>
+            <form action="">
           <h3 class="box_title">PAYMENT</h3>
           <p>
             <label for = "payment_method">How would you like to pay?</label>
-            <input class="first_payment" type = "radio" id ="payment_method" name="payment_method">Credit Card</input>
+            <input type = "radio" id ="payment_method" name="payment_method">Credit Card</input>
             <input type = "radio" id ="payment_method" name="payment_method">Debit Card</input>
             <input type = "radio" id ="payment_method" name="payment_method">PayPal</input>
           </p>
@@ -360,7 +375,9 @@
           </p>
           </div>
           <button type="submit" class="box_button"><h4>SUBMIT</h4></button>
+            </form>
         </div>
+    </div>
       </section>
 
       <section class="element" class="box">
@@ -374,24 +391,24 @@
           <p>&lt;h4 class="box_title"&gt;CHECKOUT&lt;/h4&gt;</p>
           <p>&lt;table&gt;</p>
           <p>&lt;tr class="item"&gt;</p>
-          <p>&lt;td&gt;img src="img/p1.jpg" class="check_img"&gt;&lt;/td&gt;</p>
-          <p>&lt;td class="product"&gt;Product 1&lt;/td&gt;</p>
-          <p>&lt;td class = "price"&gt;$0.00&lt;/td&gt;</p>
+          <p>&lt;td&gt;img src="img/p7.png" class="check_img"&gt;&lt;/td&gt;</p>
+          <p>&lt;td class="product"&gt;Apple MacBook Air - Space Grey&lt;/td&gt;</p>
+          <p>&lt;td class = "price"&gt;$1,199.99&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;tr class="item"&gt;</p>
-          <p>&lt;td&gt;img src="img/p1.jpg" class="check_img"&gt;&lt;/td&gt;</p>
-          <p>&lt;td class="product"&gt;Product 2&lt;/td&gt;</p>
-          <p>&lt;td class = "price"&gt;$0.00&lt;/td&gt;</p>
+          <p>&lt;td&gt;img src="img/p8.png" class="check_img"&gt;&lt;/td&gt;</p>
+          <p>&lt;td class="product"&gt;Beats by Dr. Dre Solo3 Club Collection&lt;/td&gt;</p>
+          <p>&lt;td class = "price"&gt;$179.99&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;tr class="item"&gt;</p>
-          <p>&lt;td&gt;img src="img/p1.jpg" class="check_img"&gt;&lt;/td&gt;</p>
-          <p>&lt;td class="product"&gt;Product 3&lt;/td&gt;</p>
-          <p>&lt;td class = "price"&gt;$0.00&lt;/td&gt;</p>
+          <p>&lt;td&gt;img src="img/p9.png" class="check_img"&gt;&lt;/td&gt;</p>
+          <p>&lt;td class="product"&gt;Harman Kardon Astra Bluetooth Speaker&lt;/td&gt;</p>
+          <p>&lt;td class = "price"&gt;$429.99&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;tr class="total"&gt;</p>
           <p>&lt;td&gt;TOTAL&gt;&lt;/td&gt;</p>
           <p>&lt;td&gt;&lt;/td&gt;</p>
-          <p>&lt;td class = "price"&gt;$0.00&lt;/td&gt;</p>
+          <p>&lt;td class = "price"&gt;$1,809.97&lt;/td&gt;</p>
           <p>&lt;/tr&gt;</p>
           <p>&lt;/table&gt;</p>
           <p>&lt;button type="submit" class="box_button"&gt;CHECK OUT&lt;button&gt;</p>
@@ -399,36 +416,32 @@
         </code>
 
         <h3>Rendered element:</h3>
-        <div class="box">
+         <div class="box">
             <h3 class="box_title">CHECKOUT</h3>
             <table>
           <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p1.jpg" class="check_img"></td>
-            <td class="product">Product 1</td>
-            <td class = "price">$0.00</td>
-          </tr>
-          <!-- https://i5.walmartimages.com/asr/1115958d-37af-4ae7-bed0-9c19cd4b27c5_1.1bf6427daa2484bc6363460da8e1468e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff -->
-          <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p1.jpg" class="check_img"></td>
-            <td class="product">Product 2</td>
-            <td class = "price">$0.00</td>
+            <td><img src="img/p7.png" class="check_img"></td>
+            <td class="product">Apple MacBook Air - Space Grey</td>
+            <td class = "price">$1,199.99</td>
           </tr>
           <tr class="item">
-            <!-- https://www.noelleeming.co.nz/shop/computers-tablets/laptops/macbooks/apple-mre82x-a-13-inch-macbook-air-1-6ghz-dual-core-intel-core-i5-128gb-space-grey/prod168939.html -->
-            <td><img src="img/p1.jpg" class="check_img"></td>
-            <td class="product">Product 3</td>
-            <td class = "price">$0.00</td>
+           <td><img src="img/p8.png" class="check_img"></td>
+            <td class="product">Beats by Dr. Dre Solo3 Club Collection</td>
+            <td class = "price">$179.99</td>
+          </tr>
+          <tr class="item">
+           <td><img src="img/p9.png" class="check_img"></td>
+            <td class="product">Harman Kardon Astra Bluetooth Speaker</td>
+            <td class = "price">$429.99</td>
           </tr>
           <tr class="total">
-            <td>TOTAL</td>
+            <td class="total_name">TOTAL</td>
             <td></td>
-            <td class="price">$0.00</td>
+            <td class="total_price price">$1,809.97</td>
           </tr>
         </table>
-            <button type="submit" class="box_button"><h4>CHECK OUT</h4></button> 
-        </div>
+            <button type="submit" class="box_button" id="buy"><h4>CHECK OUT</h4></button>
+        </div> 
       </section>
 
     </section>
@@ -523,18 +536,23 @@
         <li>Dawn Monroe. (n.d.). [image]. Recieved from https://www.dawnmonroetraining.com/contact/</li>
         <li>mobilier 2000. (2016). AVANT D’ACHETER VOTRE NOUVEL ENSEMBLE LAVEUSE-SÉCHEUSE [image]. Recieved fromhttps://www.mobilier2000.com/fr/blog/9896-Avant-d%E2%80%99acheter-votre-nouvel-ensemble-laveuse-secheuse</li>
         <li>Ladeiro-Levent, F. (2016). Best Cases for Different Smartphones [image]. Recieved from http://www.mobilesplease.co.uk/articles/best-phone-cases/</li>
+        <li>homes65. (n.d.). Cozy Balcony Furniture Ideas & Inspiration [image]. Recieved from http://www.homes65.com/cozy-balcony-furniture-ideas-inspiration/</li>
+        <li>Schneider, J. (2019). Sennheiser HD 600 Review [image]. Recieved from https://www.lifewire.com/sennheiser-hd-600-review-4689534</li>
+        <li>B & H. (n.d.). Apple 13.3" MacBook Air with Retina Display (Mid 2019, Space Gray) [image]. Recieved from https://www.bhphotovideo.com/c/product/1492877-REG/apple_mvfh2ll_a_13_3_macbook_air_with.html</li>
+        <li>daraz. (n.d.). Headphones & Headsets Stereo headphones [image]. Recieved from https://www.daraz.pk/headphones-headsets/stereo-headphones/</li>
+        <li>World Design Guide. (2018). Harman Kardon Astra / Voice-activated speaker [image]. Recieved from https://ifworlddesignguide.com/entry/237260-harman-kardon-astra</li>
+        <li>IIC DEALS. (2018). Best Buy Black Friday 2018 Canada Deals Flyer Reveals What’s on Sale [LIST] [image]. Recieved from https://www.iphoneincanada.ca/deals/best-buy-black-friday-2018-canada-deals-flyer/</li>
+         <li>Marcello, M. (2016). Confessions Of A Retail Worker On Black Friday [image]. Retrieved from https://www.theodysseyonline.com/confessions-of-retail-worker-on-black-friday</li>
+        <li></li> <li></li> <li></li>
+        <li>Best Buy. (n.d.). Apple MacBook Air 13.3" (Intel Core i5 1.8 GHz/ 128GB SSD/ 8GB RAM) - English [text]. Recieved from https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-3-intel-core-i5-1-8-ghz-128gb-ssd-8gb-ram-english/10749364</li>
+        <li>Best Buy. (n.d.). Beats by Dr. Dre Solo3 Club Collection On-Ear Bluetooth Headphones - Club Navy [text]. Recieved from https://www.bestbuy.ca/en-ca/product/beats-by-dr-dre-solo3-club-collection-on-ear-bluetooth-headphones-club-navy/13694626</li>
+        <li>Best Buy. (n.d.). Harman Kardon Astra Bluetooth Speaker - Black - Only at Best Buy [text]. Recieved from https://www.bestbuy.ca/en-ca/product/harman-kardon-astra-bluetooth-speaker-black-only-at-best-buy/13410679</>
+        <li>Wikipedia. (2019). Best Buy [text].Recieved from https://en.wikipedia.org/wiki/Best_Buy</li>
+        <li>Raymond. (2017). Best Buy: Boxing Day Sale (Starts Online on Dec 24, In-Store on Dec 26) [text].Recieved from http://www.calgarydealsblog.com/2017/12/best-buy-boxing-day-sale-starts-online-on-dec-24-in-store-on-dec-26.html</li>
+        <li></li> <li></li> <li></li>
         <li>Dharma Type. (n.d.). Bebas Neue [font]. Recieved from https://www.dafont.com/bebas-neue.font</li>
         <li>Nicholas, R., Saunders, P. (1982). Arial [font]. Defaul font.</li>
         <li>dafontfree. (n.d.). Futura Bold [font]. Recieved from https://www.dafontfree.net/freefonts-futura-f30.htm</li>
-        <li>http://www.homes65.com/cozy-balcony-furniture-ideas-inspiration/</li>
-        <li>https://www.lifewire.com/sennheiser-hd-600-review-4689534</li>
-        <li>https://www.bhphotovideo.com/c/product/1492877-REG/apple_mvfh2ll_a_13_3_macbook_air_with.html</li>
-        <li>https://www.daraz.pk/headphones-headsets/stereo-headphones/</li>
-        <li>info for product 1: https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-3-intel-core-i5-1-8-ghz-128gb-ssd-8gb-ram-english/10749364</li>
-        <li>info for product 2: https://www.bestbuy.ca/en-ca/product/beats-by-dr-dre-solo3-club-collection-on-ear-bluetooth-headphones-club-navy/13694626</li>
-        <li>https://ifworlddesignguide.com/entry/237260-harman-kardon-astra</li>
-        <li>https://www.bestbuy.ca/en-ca/product/harman-kardon-astra-bluetooth-speaker-black-only-at-best-buy/13410679</>
-     
      </ul>
 
     </section>

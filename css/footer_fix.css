@@ -1,3 +1,9 @@
 footer{
     margin-left: -7rem;
 }
+
+@media (max-width: 56rem){
+    footer{
+        margin-left: -3rem;
+    }
+}

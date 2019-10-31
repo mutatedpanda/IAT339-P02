@@ -9,7 +9,6 @@ header{
   width: 100%;
   position: absolute;
   box-shadow: 0px 0px 10px black;
-  padding-left: 2rem;
   padding-bottom: .7rem;
   z-index: 1;
 }
@@ -20,6 +19,7 @@ header{
   margin-top: 1.5rem;
   font-size: 30px;
   font-family: Futura-Bold;
+  padding-left: 2rem;
 }
 
 body {
@@ -354,16 +354,6 @@ table{
   height: auto;
 }
 
-.sale_img{
-
-  max-width: 100%;
-   height: auto;
-     display: block;
-margin-left: auto;
-margin-right: auto;
-
-}
-
 .box p{
   padding-bottom: 1rem;
 }
@@ -460,12 +450,6 @@ li{
   padding-bottom: 1rem;
 }
 
-.sale_img{
-  max-width: 100%;
-   height: auto;
-     margin-left: 1rem;
-}
-
 ul.dot {
   list-style-type: square;
    margin-left: 35px;
@@ -474,10 +458,60 @@ ul.dot {
 }
 
 #contact p{
-  margin-top: 0px;
- margin-bottom: 15px;
- margin-right: 0px ;
+ margin-left: 100px;
+}
+
+#contact h2{
+ margin-top : 0px;
+ margin-bottom : 20px;
  margin-left: 50px;
+}
+
+.about {
+  font-weight: lighter;
+  margin : 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+  position: relative;
+}
+
+.about_div{
+    display: inline;
+}
+
+.contactWay {
+  line-height: 2em;
+}
+
+.events {
+  margin-top: 2rem;
+  line-height: 1.5em;
+}
+
+.sale_img{
+   width: 100%;
+   height: auto;
+   margin-top: 2rem;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:0;
+    height:0;   
+}
+.map-responsive iframe{
+    right: 0;
+    top: 0;
+    height:100%;
+    width:50%;
+    position:absolute;
+}
+
+.about_img{
+    width: 50%;
+    float: left;
+    margin-right: 2rem; 
+    margin-bottom: 2rem; 
 }
 
 @media (max-width: 76rem){
@@ -493,7 +527,29 @@ ul.dot {
     }
 }
 
+@media (max-width: 50rem){
+    .map-responsive{
+    padding-bottom: 70%;
+    margin-top: 3rem;
+    position: relative;
+}
+.map-responsive iframe{
+    height:100%;
+    width:100%;
+}
+.about_img{
+    width: 100%;
+    float: left;
+    margin-right: 0; 
+    margin-bottom: 2rem; 
+}
+
+}
+
 @media (max-width: 33rem){
+    .map-responsive{
+    margin-top: 1rem;
+
   .product_list td{
      display: block;
   }
@@ -515,5 +571,7 @@ ul.dot {
       margin: 0;
   }
 }
+
+
 
 

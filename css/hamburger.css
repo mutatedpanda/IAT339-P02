@@ -21,6 +21,7 @@ nav label, nav #hamburger{
 
   .logo{
       margin-left: -1rem;
+       padding-left: 0;
   }
 
   nav label{
